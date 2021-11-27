@@ -1,1 +1,1 @@
-# jadwal-kelas-c
+# jadwal-ilkom-c
