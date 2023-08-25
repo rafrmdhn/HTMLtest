@@ -1,5 +1,10 @@
 * {
+    margin: 0;
+    padding: 0;
 	box-sizing: border-box;
+    outline: none;
+    border: none;
+    text-decoration: none;
 }
 
 html {
@@ -8,8 +13,9 @@ html {
 
 body {
     font-family: 'Poppins', sans-serif;
-    background-color: var(--bg);
-    /* min-height: 2000px; */
+    background-color: #fff;
+    min-height: 100vh; 
+    display: block;
 }
 
 header {
@@ -17,11 +23,35 @@ header {
     text-align: center;
 }
 
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #322653;
+    padding: 5px;
+}
+
+
+.navbar-logo {
+    font-size: 24px;
+    font-weight: 700;
+    color: white;
+    padding: 10px 20px;
+}
+
+.navbar .navbar-nav a {
+    color: #ffffff;
+    display: inline-block;
+    font-size: 1.2rem;
+    margin-right: 2rem;
+}
+
+
 header nav {
 	top: 0;
     padding: 5px;
 	position: sticky;
-    background-color: #322653;
+    background-color: #ffffff;
 }
 
 header nav li {
@@ -141,7 +171,7 @@ footer {
 	text-align: center;
 }
 
-@media screen and (max-width: 1000px) {
+@media(max-width: 1366px) {
     .about-container {
         flex-direction: column; /* Stack the sections on top of each other */
         text-align: center; /* Center align contents */
@@ -150,5 +180,27 @@ footer {
     .profile-card,
     .about-me-content {
         width: 100%;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    html{
+        font-size: 62.5%;
+    }
+    .about-container {
+        flex-direction: column; 
+        text-align: center;
+    }
+
+    .profile-card,
+    .about-me-content {
+        width: 100%;
+    }
+        
+}
+
+@media(max-width: 450px) {
+    html{
+        font-size: 55%;
     }
 }
