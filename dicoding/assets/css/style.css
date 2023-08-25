@@ -1,0 +1,154 @@
+* {
+	box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: var(--bg);
+    /* min-height: 2000px; */
+}
+
+header {
+    display: inline;
+    text-align: center;
+}
+
+header nav {
+	top: 0;
+    padding: 5px;
+	position: sticky;
+    background-color: #322653;
+}
+
+header nav li {
+    display: inline;
+	list-style-type: none;
+	margin-right: 20px;
+}
+
+header nav a {
+    font-size: 18px;
+	font-weight: 400;
+	text-decoration: none;
+	color: white;
+    
+}
+
+.section {
+    padding: 5rem 0;
+    text-align: center;
+}
+
+.container {
+    max-width: 70%;
+    margin: 0 auto;
+    padding: 1 5rem;
+}
+
+.profile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    background-color: #9288F8;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    padding: 2rem;
+    border-radius: 20px;
+}
+
+.profile img {
+    flex: 2;
+    max-width: 400px;
+    width: 70%;
+    border-radius: 50%;
+    margin-right: 0.1rem;
+}
+
+.profile-description {
+    flex: 1;
+    text-align: left;
+    width: 70%;
+}
+
+.about-container {
+    max-width: 70%; 
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.profile-card {
+    width: 80%; 
+    margin: 0 auto;
+}
+
+.about-profile-container{
+    width: 100%;
+    align-items: center;
+}
+
+.about-me-content {
+    width: 100%;
+}
+
+.profile-card section img{
+    padding: 1rem;
+}
+
+.rounded{
+    border-radius: 50%;
+    max-width: 100px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 0.5rem;
+}
+
+.email-contact a {
+    text-decoration: none;
+    color: #9288F8;
+}
+
+form input,
+form textarea {
+    width: 100%;
+    padding: 0.5rem;
+    margin-bottom: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+form button {
+    background-color: #322653;
+    color: white;
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+
+footer {
+	padding: 10px;
+	color: white;
+	background-color: #322653;
+	text-align: center;
+}
+
+@media screen and (max-width: 1000px) {
+    .about-container {
+        flex-direction: column; /* Stack the sections on top of each other */
+        text-align: center; /* Center align contents */
+    }
+
+    .profile-card,
+    .about-me-content {
+        width: 100%;
+    }
+}
